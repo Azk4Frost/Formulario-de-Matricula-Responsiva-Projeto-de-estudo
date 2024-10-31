@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário De Matrícula</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <div class="description">
+            <a href="index.html"><img src="./assets/Back.svg" alt=""> Voltar</a>
+            <h1>Formulário de matrícula</h1>
+            <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        </div>
+
+        <form action="">
+            <h2>informações da criança</h2>
+            <div class="inputWrapper">
+                <label for="">Nome completo</label>
+                <input type="text">
+            </div>    
+            <div class="inputWrapper">
+                <label for="">Data de Nascimento</label>
+                <input type="date">
+            </div>    
+            <div class="inputWrapper">
+                <label for="">Sexo</label>
+                <select name="" id="">
+                    <option value="">Feminino</option>
+                    <option value="">Masculino</option>
+                </select>
+            </div>    
+            <div class="inputWrapper">
+                <label for="">Informações médicas</label>
+                <textarea rows="5" cols="15"></textarea>
+            </div> 
+            <div class="inputWrapper">
+                <label for="file">Certidão de nascimento</label>
+                    <label for="file" class="uploadDropArea">
+                    <input type="file" id="file" class="hidden-input">
+                    <label for="file" class="clickable-label">
+                        <img src="./assets/cloud-upload.svg" alt="Upload icon">
+                        <span>Clique aqui para selecionar arquivos</span>
+                    </label>
+                </label>
+            </div>
+            <h2>Endereço Residencial</h2>
+            <div class="inputWrapper">
+                <label for="">CEP</label>
+                <input type="text">
+            </div>
+            <div class="inputWrapper">
+                <label for="">Rua</label>
+                <input type="text">
+
+                <label for="">Numero</label>
+                <input type="number">
+            </div>
+            <div class="inputWrapper">
+                <label for="">Cidade</label>
+                <input type="text">
+
+                <label for="">Estado</label>
+                <input type="text">
+            </div>   
+            <h2>Informações do Responsável</h2> 
+            <div class="inputWrapper">
+                <label for="">Nome completo do Responsavel</label>
+                <input type="text">
+            </div>    
+            <div class="inputWrapper">
+                <label for="">Telefone pra Contato</label>
+                <input type="text">
+            </div>        
+            <div class="inputWrapper">
+                <label for="email">Email</label>
+                <input type="email">
+            </div>
+            <h2>Opções de Matricula</h2>
+            <div class="inputWrapperShift">
+                <label for="">Selecione o turno de estudo</label>
+                <div class="shiftOptionMorning">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/MorningCloudOption.svg" alt=""> Manhã</label>
+                </div>
+                <div class="shiftOptionAfternoon">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/AfternoonSunOption.svg" alt=""> Tarde</label>
+                </div>
+            </div>       
+            <div class="inputWrapperSports">
+                <label for="" style="grid-area: L;">Em qual esporte voce gostaria de inscrever seu filho?</label>
+
+                <div class="SportsOption" style="grid-area: F;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/footballVector.svg" alt=""> Futebol</label>
+                </div>
+                <div class="SportsOption" style="grid-area: B;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/basketball-02.svg" alt=""> Basquete</label>
+                </div>
+                <div class="SportsOption" style="grid-area: N;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/swimming.svg" alt=""> Natação</label>
+                </div>
+                <div class="SportsOption" style="grid-area: Y;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/yoga-02.svg" alt=""> Yoga</label>
+                </div>
+                <div class="SportsOption" style="grid-area: V;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/volleyball.svg" alt="">Volei</label>
+                </div>
+                <div class="SportsOption" style="grid-area: BX;">
+                    <input type="checkbox">
+                    <label for=""><img src="./assets/boxing-glove-01.svg" alt=""> Boxing</label>
+                </div>
+                
+            </div>    
+            <div class="inputWrapperPoliticPrivacy">
+                <input type="checkbox">
+                <label for="">Declaro que li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span> da escola Estrela do Amanhã. </label>
+            </div>       
+            <div class="buttonForm">
+                <button id="saveAnswer">Salvar respostas</button>
+                <button type="submit" id="confirmRegistration">Fazer Matricula</button>
+            </div>
+        </form>
+    </main>
+</body>
+</html>

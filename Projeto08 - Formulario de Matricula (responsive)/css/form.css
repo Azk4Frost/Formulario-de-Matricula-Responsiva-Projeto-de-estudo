@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --baseColor-BackgroundInput: #FFFFFF;
+    --baseColor-Background: #FEE7D6;
+    --baseColor-StrokeCheckedAndButton: #E43A12;
+    --baseColor-Primary: #292524;                    
+    --baseColor-Secondary: #57534E;
+    --baseColor-InputError: #F3541C;
+    --baseColor-Stroke: #D6D3D1;
+    --baseColor-Span: #A8A29E;
+
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    height: 100vh;
+    margin: 6.4rem auto;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin: 2.4rem 0 0.8rem;
+}
+
+p, .inputWrapper input, a {
+    font-size: 1.6rem;
+}
+
+label {
+    font-size: 1.4rem;
+}
+
+h2 {
+    margin-top: 4.6rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.description {
+    max-width: 52rem;
+}
+
+.description a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    color: var(--baseColor-Secondary);
+    text-decoration: none;
+}
+
+form {
+    max-width: 52rem;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 2.4rem;
+
+}
+
+.inputWrapper input, select, textarea {
+    padding: 1rem;
+    border: 1px solid var(--baseColor-Stroke);
+    border-radius: 0.8rem;
+    background-color: var(--baseColor-BackgroundInput);
+}
+
+.inputWrapper input::placeholder {
+    color: var(--baseColor-Secondary);
+}
+
+.uploadDropArea {
+    border: 1px solid var(--baseColor-Stroke);
+    border-radius: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+}
+
+.hidden-input {
+    display: none; 
+}
+
+.uploadDropArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 2px dashed var(--baseColor-Stroke);
+    padding: 20px;
+    cursor: pointer;
+}
+
+.clickable-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer; 
+}
+
+span {
+    text-align:center;  
+    max-width: 15rem;
+    color: var(--baseColor-Span)
+}
+
+.inputWrapperShift {
+    display: grid;
+    grid-template-areas: 
+    'L L'
+    'SM SA';
+    row-gap: 2rem;
+    margin-block: 2.4rem;
+}
+
+.inputWrapperShift label{
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    grid-area: L;
+}
+.shiftOptionMorning{
+    display: flex;
+    align-items: start;
+    gap: 7.2rem;
+
+    width: 25rem;
+    padding: 1rem;
+    grid-area: SM;
+
+    border: 2px solid var(--baseColor-Stroke);
+    border-radius: 0.8rem;
+}
+
+.shiftOptionAfternoon {
+    display: flex;
+    align-items: start;
+    gap: 7.2rem;
+
+    width: 25rem;
+    padding: 1rem;
+    grid-area: SA;
+
+    border: 2px solid var(--baseColor-Stroke);
+    border-radius: 0.8rem;
+}
+
+.inputWrapperSports {
+    display: grid;
+    grid-template-areas: 
+    'L L L'
+    'F B N'
+    'Y V BX';
+    grid-template-rows: repeat(3, max-content);
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.SportsOption{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+
+    width: 12rem;
+    padding: 1rem;
+    margin-top: 1.6rem;
+
+    border: 2px solid var(--baseColor-Stroke);
+    border-radius: 0.8rem;
+}
+
+.SportsOption label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.inputWrapperPoliticPrivacy {
+    margin-block: 4.8rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.inputWrapperPoliticPrivacy span {
+    color: var(--baseColor-Checked);
+}
+
+.buttonForm {
+    display: flex;
+    gap: 2rem;
+    justify-content: end;
+}
+
+#saveAnswer{
+    padding: 1rem;
+    border: 2px solid var(--baseColor-StrokeCheckedAndButton);
+    background-color: var(--baseColor-BackgroundInput);
+    color: var(--baseColor-StrokeCheckedAndButton);
+
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+}
+
+#confirmRegistration {
+    padding: 1rem;
+
+    border: 2px solid var(--baseColor-StrokeCheckedAndButton);
+    background-color: var(--baseColor-StrokeCheckedAndButton);
+    color: var(--baseColor-Background);
+
+    border-radius: 0.8rem;
+
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: 1px solid var(--baseColor-Stroke);
+}
+
+input[type="checkbox"]:checked {
+    background-image: url(../assets/VectorCheckbox.svg);
+    background-size: cover;
+    border: none;
+  
+}
+
+.inputWrapperPoliticPrivacy input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none; 
+    -moz-appearance: none;
+    width: 4rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--baseColor-Stroke);
+}
+
+.inputWrapperPoliticPrivacy input[type="checkbox"]:checked {
+    background-image: url(../assets/VectorCheckbox.svg);
+    background-size: cover;
+    border: none;
+}
+

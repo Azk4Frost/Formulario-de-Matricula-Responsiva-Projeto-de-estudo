@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --baseColor-Background: #FEE7D6;
+    --baseColor-Span: #E43A12;
+    --baseColor-Primary: #292524;                    
+    --baseColor-Secondary: #57534E;
+}
+
+body {
+    height: max-content;
+    background-color: var(--baseColor-Background);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 6.4rem;
+
+}
+
+#tomorrowStar {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+
+    font-size: 2rem;
+
+    font-family: 'Schoolbell', cursive;
+    color: var(--baseColor-Primary);
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    padding-block: 0.8rem;
+    max-width: 49rem;
+}
+
+h1 span {
+    color: var(--baseColor-Span);
+}
+
+p {
+    font-size: 1.6rem;
+    color: var(--baseColor-Secondary);
+    max-width: 49rem;
+}
+
+#main-image {
+    padding-block: 3.2rem;
+    width: 49rem;
+}
+
+.registration{
+    width: 49rem;
+    padding: 1rem;
+    
+
+}
+
+a {
+    border-radius: 2rem;
+    border: none;
+
+    background-color: var(--baseColor-Span);
+    text-align: center;
+
+    color: #FEE7D6;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+
+    text-align: center;
+    
+    padding: 1rem 15rem;
+}
+
+a:hover {
+    background-color: #96240b;
+}

@@ -1,0 +1,51 @@
+@media (max-width:600px) {
+    main {
+        margin: 6.4rem auto;
+        width: 30rem;
+    }
+
+    .description {
+        width: 30rem;
+    }
+
+    #main-image{
+        width: 30rem;
+    }
+    a {
+        width: 30rem;
+        padding: 1rem;
+    }
+    h1 {
+        font-size: 2rem;
+        max-width: 30rem;
+    }
+    p {
+        font-size: 1.4rem;
+    }
+
+    .inputWrapperShift, .inputWrapperSports{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputWrapperSports {
+        display: grid;
+        grid-template-areas: 
+        'L L'
+        'F Y'
+        'V B' 
+        'N BX';
+        
+        grid-template-rows: repeat(2, max-content);
+        grid-template-columns: repeat(2,1fr);
+    }
+    .inputWrapperPoliticPrivacy label {
+        font-size: 1.2rem;
+    }
+    .inputWrapperPoliticPrivacy input[type="checkbox"] {
+        width: 6rem;
+        height: 2.5rem;
+        border-radius: 50%;
+        border: 1px solid var(--baseColor-Stroke);
+    }
+}
